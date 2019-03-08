@@ -79,8 +79,8 @@ mymesh.update(calc_edges = True)
 mymesh2.from_pydata(verts2, [], faces)
 mymesh2.update(calc_edges = True)
 
-mymesh3.from_pydata(verts3, [], faces)
-mymesh3.update(calc_edges = True)
+# mymesh3.from_pydata(verts3, [], faces)
+# mymesh3.update(calc_edges = True)
 
 # joint coordinates
 mesh = bpy.data.meshes.new('second_joint')

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0201458-ec5c-440c-bba0-1d8dca90170c" name="Default" comment="" />
+    <list default="true" id="c0201458-ec5c-440c-bba0-1d8dca90170c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/simulator/blender_drawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/blender_drawer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +33,8 @@
       <file leaf-file-name="blender_drawer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulator/blender_drawer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+            <state relative-caret-position="224">
+              <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
               <folding>
                 <element signature="e#83#101#0" expanded="true" />
               </folding>
@@ -78,6 +80,9 @@
       <find>verts</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -96,6 +101,7 @@
     <option name="width" value="699" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -243,7 +249,7 @@
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.32876712" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26180258" />
@@ -305,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simulator/blender_drawer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="86" column="49" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+        <state relative-caret-position="224">
+          <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
           <folding>
             <element signature="e#83#101#0" expanded="true" />
           </folding>
