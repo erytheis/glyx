@@ -1,39 +1,43 @@
-from simulator.physics import rotate_vector
+from simulator.physics import rotate_vector, DEFAULT_ORIENTATION, get_orientation_from_vectors
 import math
 import numpy as np
 
-joint_relative_coordinates = np.array([- 0.005, - 0.005, 0.015])
+joint_relative_coordinates = np.array([- 0.5, - 0.5, 1.5])
 
 
 class Servo():
     def __init__(self, coordinates = (0, 0, 0), orientation = (0, 0, 0), position = 0):
         self.base_coordinates = coordinates
         self.orientation = np.asanyarray(orientation)
-        self.width = 0.02
-        self.height = 0.02
+        self.orientation_vector = rotate_vector(DEFAULT_ORIENTATION, self.orientation)
         self.body_is_rotating = False
-        self.update_joint_coordinates(self.orientation)
+        self.update_joint_coordinates()
         self.angular_speed = 0
         self.position = position
+        self.SIDE = 1
 
     def join_servo(self, other_servo, connected_side):
         """
-        connects THIS servo to OTHER servo, translating the base coordinates of this servo
-        to the coordinates of the joint of the other servo.
+        connects THIS servo to OTHER servo, translating the base coordinates of THIS servo
+        to the coordinates of the joint of the OTHER servo.
         :param other_servo:
-        :param connected_side: 1 or -1
+        :param connected_side: 1 or -1 means the direction of the rotation
         :return:
         """
         self.connected_side = connected_side
         self.connected_servo = other_servo
         self.base_coordinates = other_servo.joint_coordinates
-        self.orientation = other_servo.orientation + (0, math.pi / 2, math.pi / 2)
-        self.update_joint_coordinates(self.orientation)
-        print(self.base_coordinates)
-        print(self.orientation)
+        self.orientation_vector = rotate_vector(self.connected_servo.orientation_vector, (0, math.pi / 2, math.pi / 2))
+        print(self.orientation_vector)
+        new_orientation = get_orientation_from_vectors(DEFAULT_ORIENTATION, self.orientation_vector)
+        print(new_orientation)
+        self.set_orientation(new_orientation)
+        print(self.orientation_vector)
+        print()
+        self.update_joint_coordinates()
 
-    def update_joint_coordinates(self, orientation):
-        self.joint_coordinates = rotate_vector(self.base_coordinates + joint_relative_coordinates, orientation)
+    def update_joint_coordinates(self):
+        self.joint_coordinates = self.base_coordinates + rotate_vector(joint_relative_coordinates, self.orientation)
 
     def set_angular_speed(self, w):
         self.angular_speed = w
@@ -52,3 +56,7 @@ class Servo():
         self.update_joint_coordinates(self.orientation)
         # Turn the engine
         self.position += self.angular_speed
+
+    def set_orientation(self, orientation):
+        self.orientation = orientation
+        self.orientation_vector = rotate_vector(DEFAULT_ORIENTATION, self.orientation)

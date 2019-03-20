@@ -41,7 +41,7 @@ MODEL_XML = """
                 <body pos="0 0 0">
                 <joint type="ball" pos="0.0 0 0"/>
                 <site name="end1" pos="0.0 0 0.6" type="sphere" size="0.01"/>
-                <geom type="box" size=".2 .2 .1" rgba="0 .9 0 .8" euler = "0 1.57 0"/>
+                <geom type="box" size=".2 .2 .1" rgba="0 .9 0 .8" euler = />
                 </body>
             </body>
    </worldbody>
