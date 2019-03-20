@@ -10,6 +10,7 @@ from mujoco_py import load_model_from_xml, MjSim, MjViewer
 import math
 import os
 from simulator.servo import Servo
+from simulator.view.xml_builder import *
 import numpy as np
 
 
@@ -25,30 +26,18 @@ servo2.join_servo(servo1, 1)
 servo3.join_servo(servo2, 1)
 
 
+# Building the xml
+builder = xml_builder()
+worldbody = builder.worldbody
+append_servo(worldbody, servo1)
+append_servo(worldbody, servo2)
+append_servo(worldbody, servo3)
+TEST_XML = str(builder.get_root_str())[2:-1]
 
-MODEL_XML = """
-<mujoco>
- <compiler angle="radian"/>
-   <worldbody>
-      <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>    
-      <geom type="plane" size="1 1 0.1" rgba=".9 0 0 1"/>        
-            <body>
-            <geom type="capsule" fromto = "0.3 0 1.8  0.3 0 1.2" size="0.04" rgba="0.2 0.2 0.2 0.5"/>
-            <joint type="hinge" pos="0.3 0 1.8" axis="0 1 0"/>      
-            <joint type="hinge" pos="0.3 0 1.8" axis="1 0 0"/>   
-            <joint type="hinge" pos="0.3 0 1.8" axis="0 0 1"/>      
-            <site name="end2" pos="0.3 0 1.8" type="sphere" size="0.01"/>
-                <body pos="0 0 0">
-                <joint type="ball" pos="0.0 0 0"/>
-                <site name="end1" pos="0.0 0 0.6" type="sphere" size="0.01"/>
-                <geom type="box" size=".2 .2 .1" rgba="0 .9 0 .8" euler = />
-                </body>
-            </body>
-   </worldbody>
-</mujoco>
-"""
 
-model = load_model_from_xml(MODEL_XML)
+
+# Building the model
+model = load_model_from_xml(TEST_XML)
 sim = MjSim(model)
 viewer = MjViewer(sim)
 t = 0
