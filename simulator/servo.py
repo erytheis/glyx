@@ -2,11 +2,13 @@ from simulator.physics import rotate_vector, DEFAULT_ORIENTATION, get_orientatio
 import math
 import numpy as np
 
-joint_relative_coordinates = np.array([- 0.5, - 0.5, 1.5])
+JOINT_RELATIVE_COORDINATES = np.array([0., -.1, .4])
+SIDES = np.array([.1, .2, .2])
 
 
 class Servo():
     def __init__(self, coordinates = (0, 0, 0), orientation = (0, 0, 0), position = 0):
+        # TODO rename coordinates into relative position
         self.base_coordinates = coordinates
         self.orientation = np.asanyarray(orientation)
         self.orientation_vector = rotate_vector(DEFAULT_ORIENTATION, self.orientation)
@@ -37,7 +39,9 @@ class Servo():
         self.update_joint_coordinates()
 
     def update_joint_coordinates(self):
-        self.joint_coordinates = self.base_coordinates + rotate_vector(joint_relative_coordinates, self.orientation)
+        self.joint_coordinates = self.base_coordinates + rotate_vector(JOINT_RELATIVE_COORDINATES, self.orientation)
+        print(self.joint_coordinates)
+        print(self.base_coordinates)
 
     def set_angular_speed(self, w):
         self.angular_speed = w
