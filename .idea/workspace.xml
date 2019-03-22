@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0201458-ec5c-440c-bba0-1d8dca90170c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/simulator/helper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulator/view/world_body.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/blender_drawer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/physics.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/physics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simulator/servo.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/servo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/view/Output.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/simulator/view/mujoco_drawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/view/mujoco_drawer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulator/view/xml_builder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulator/view/world_body.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulator/view/world_body.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,29 +26,29 @@
       <file leaf-file-name="servo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulator/servo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="297">
+              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
               <folding>
-                <element signature="e#0#94#0" expanded="true" />
+                <element signature="e#0#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mujoco_drawer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mujoco_drawer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulator/view/mujoco_drawer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world_body.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="world_body.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulator/view/world_body.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+            <state relative-caret-position="89">
+              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -60,8 +59,8 @@
       <file leaf-file-name="body_interaction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../mujoco-py/examples/body_interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="27" column="97" lean-forward="true" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
+            <state relative-caret-position="405">
+              <caret line="27" column="97" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
               <folding>
                 <element signature="e#460#518#0" expanded="true" />
               </folding>
@@ -72,11 +71,29 @@
       <file leaf-file-name="physics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulator/physics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simulator/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/quaternion/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="598" selection-start-line="598" selection-end-line="598" />
             </state>
           </provider>
         </entry>
@@ -95,6 +112,12 @@
       <find>verts</find>
       <find>\n</find>
       <find>orien</find>
+      <find>quat</find>
+      <find>servo1</find>
+      <find>sphere</find>
+      <find>sp</find>
+      <find>end0</find>
+      <find>end</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +130,6 @@
         <option value="$PROJECT_DIR$/simulator/drawer.py" />
         <option value="$PROJECT_DIR$/simulator/__init__.py" />
         <option value="$PROJECT_DIR$/simulator/test_drawer.py" />
-        <option value="$PROJECT_DIR$/simulator/physics.py" />
         <option value="$PROJECT_DIR$/simulator/main.py" />
         <option value="$PROJECT_DIR$/simulator/blender_drawer.py" />
         <option value="$PROJECT_DIR$/simulator/mujoco_drawer.py" />
@@ -116,9 +138,10 @@
         <option value="$PROJECT_DIR$/simulator/view/xml_builder.py" />
         <option value="$PROJECT_DIR$/simulator/view/worldbody.py" />
         <option value="$PROJECT_DIR$/../mujoco-py/xmls/door.xml" />
-        <option value="$PROJECT_DIR$/simulator/view/mujoco_drawer.py" />
-        <option value="$PROJECT_DIR$/simulator/servo.py" />
+        <option value="$PROJECT_DIR$/simulator/physics.py" />
         <option value="$PROJECT_DIR$/simulator/view/world_body.py" />
+        <option value="$PROJECT_DIR$/simulator/servo.py" />
+        <option value="$PROJECT_DIR$/simulator/view/mujoco_drawer.py" />
       </list>
     </option>
   </component>
@@ -133,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,7 +185,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,7 +263,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="tosser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="physics" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Glyx" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,11 +271,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../mujoco-py/examples" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simulator" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../mujoco-py/examples/tosser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulator/physics.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,18 +301,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.body_interaction" />
-      <item itemvalue="Python.tosser" />
       <item itemvalue="Python.mujoco_drawer" />
       <item itemvalue="Python.xml_builder" />
       <item itemvalue="Python.mujoco_drawer (1)" />
+      <item itemvalue="Python.physics" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mujoco_drawer (1)" />
+        <item itemvalue="Python.physics" />
         <item itemvalue="Python.body_interaction" />
         <item itemvalue="Python.xml_builder" />
         <item itemvalue="Python.mujoco_drawer" />
-        <item itemvalue="Python.tosser" />
       </list>
     </recent_temporary>
   </component>
@@ -307,21 +330,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1397" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1397" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13099499" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32876712" />
+      <window_info anchor="bottom" id="Python Console" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32876712" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13099499" />
       <window_info anchor="right" id="R Packages" order="2" />
       <window_info anchor="right" id="R Graphics" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32876712" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32876712" />
-      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39975095" />
+      <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
@@ -329,7 +353,6 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32876712" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -337,7 +360,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="31" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -405,23 +428,6 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simulator/physics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///anaconda3/envs/ml/lib/python3.6/site-packages/numpy/core/arrayprint.py" />
     <entry file="file://$PROJECT_DIR$/simulator/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -431,7 +437,7 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
         <state relative-caret-position="420">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <element signature="e#0#94#0" expanded="true" />
+            <element signature="e#0#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -440,6 +446,9 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#83#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -470,6 +479,9 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#83#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -496,7 +508,7 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
         <state relative-caret-position="390">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <element signature="e#0#94#0" expanded="true" />
+            <element signature="e#0#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,6 +521,9 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding>
+            <element signature="e#83#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,7 +550,7 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
         <state relative-caret-position="390">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <element signature="e#0#94#0" expanded="true" />
+            <element signature="e#0#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -582,13 +597,6 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
     </entry>
     <entry file="file://$PROJECT_DIR$/simulator/view/servo.xml" />
     <entry file="file://$PROJECT_DIR$/simulator/view/Output.txt" />
-    <entry file="file://$PROJECT_DIR$/simulator/blender_drawer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simulator/helper/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -634,19 +642,36 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulator/main.py">
+    <entry file="file://$PROJECT_DIR$/../mujoco-py/examples/body_interaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="27" column="97" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
+          <folding>
+            <element signature="e#460#518#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulator/physics.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        <state relative-caret-position="145">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/quaternion/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="598" selection-start-line="598" selection-end-line="598" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator/blender_drawer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#83#101#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,40 +679,47 @@ myobject2 = bpy.data.objects.new(&quot;Other servo&quot;, mymesh2)</expression-s
     <entry file="file://$PROJECT_DIR$/simulator/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../mujoco-py/examples/body_interaction.py">
+    <entry file="file://$PROJECT_DIR$/simulator/physics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="27" column="97" lean-forward="true" selection-start-line="27" selection-start-column="97" selection-end-line="27" selection-end-column="97" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#460#518#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator/view/world_body.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulator/servo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulator/view/mujoco_drawer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator/servo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulator/view/world_body.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>

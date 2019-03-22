@@ -1,9 +1,9 @@
 from lxml import etree
 from simulator.servo import SIDES
+from quaternion import as_float_array
 
 class World_body():
     servo_counter = 0
-
 
     COMPILER = 'radian'
     BASE_COLOR = '0.8 0 0 .6'
@@ -87,14 +87,13 @@ class World_body():
 
 
 class Servo_body():
-
+    # TODO Refactor into new file and make nice logic for connection of the servos
     def __init__(self, servo):
 
         # Initialization of variables
         self.geom_color_str = '0 .9 0 .5'
         self.size = SIDES
         self.servo_object = servo
-        self.euler = '0 0 0'
 
         # Initialization of strings
         self.position = self.servo_object.base_coordinates
@@ -119,11 +118,21 @@ class Servo_body():
                                                            self.size[1],
                                                            self.size[2])
 
+        self.quaternion = as_float_array(servo.quaternion)
+        self.quaternion_str = '{:.3f} {:.3f} {:.3f} {:.3f}'.format(self.quaternion[0],
+                                                                   self.quaternion[1],
+                                                                   self.quaternion[2],
+                                                                   self.quaternion[3])
+
+
+
         # Building an xml
         self.create_servo_xml()
 
 
+
     def create_servo_xml(self):
+        # TODO build an XML files for readability
         """
         Building a XML element describing the servo
         :param servo:
@@ -133,7 +142,7 @@ class Servo_body():
 
         # Initializing roots
         root = etree.Element('body')
-        root.set('pos', self.pos_str)
+        # root.set('pos', self.pos_str)
 
         # Geom parameters
         geom_child = etree.Element('geom')
@@ -142,6 +151,7 @@ class Servo_body():
         geom_child.set('size', self.geom_size_str)
         geom_child.set('rgba', self.geom_color_str)
         geom_child.set('name', self.geom_name_str)
+        geom_child.set('quat', self.quaternion_str)
         root.append(geom_child)
 
         # Joint parameters
@@ -201,4 +211,10 @@ class Servo_body():
                                                                    color[2],
                                                                    color[3])
         self.geom_child.set('rgba', self.geom_color_str)
+
+    def set_position(self, position):
+        self.position = position
+        self.pos_str = '{:.2f} {:.2f} {:.2f}'.format(self.position[0],
+                                                     self.position[1],
+                                                     self.position[2])
 
