@@ -1,5 +1,6 @@
 from lxml import etree
-
+import xml.etree.cElementTree as ET
+import sys
 
 class World_body():
     servo_counter = 0
@@ -22,7 +23,6 @@ class World_body():
 
         self.root = root
         self.worldbody_child = worldbody_child
-
         self.draw_coordinate_basis()
         self.draw_lights()
         self.draw_plane()
@@ -31,7 +31,7 @@ class World_body():
         self.worldbody_child.append(servo_body.root)
 
     def get_root_str(self):
-        return etree.tostring(self.root)
+        return str(etree.tostring(self.root))[2:-1]
 
     def draw_coordinate_basis(self):
         """
@@ -92,11 +92,11 @@ class World_body():
         self.worldbody_child.append(geom_child)
 
 
-def draw_xml_line(root, child_type_str, **kwargs):
+def draw_xml_line(child_type_str, **kwargs):
     """
     Create an XML object
     :param root:
-    :param kwargs:
+    :param kwargs: all parameters presented in Type = "value" format
     :return:
     """
     child = etree.Element(child_type_str)
@@ -106,3 +106,9 @@ def draw_xml_line(root, child_type_str, **kwargs):
             child.set(str(key), value)
 
     return child
+
+
+def build_xml_file(root):
+    mydata = str(etree.tostring(root))[2:-1]
+    myfile = open("worldbody.xml", "w")
+    myfile.write(mydata)

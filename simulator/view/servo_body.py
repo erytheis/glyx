@@ -61,19 +61,19 @@ class Servo_body():
         # Initializing roots
         root = etree.Element('body')
         # root.set('pos', self.pos_str)
-        geom_child = draw_xml_line(root, 'geom', pos = self.pos_str, type = 'box', size = self.geom_size_str,
+        geom_child = draw_xml_line('geom', pos = self.pos_str, type = 'box', size = self.geom_size_str,
                                    rgba = self.geom_color_str, name = self.geom_name_str, quat = self.quaternion_str)
 
         # Joint parameters
-        joint_child = draw_xml_line(root, 'joint', type = self.joint_type_str, pos = self.joint_pos_str)
+        joint_child = draw_xml_line('joint', type = self.joint_type_str, pos = self.joint_pos_str)
 
         # Join site parameters
-        joint_site_child = draw_xml_line(root, 'site', name = self.site_name_str, pos = self.joint_pos_str,
+        joint_site_child = draw_xml_line('site', name = self.site_name_str, pos = self.joint_pos_str,
                                          type = 'sphere',
                                          size = self.sphere_size_str, rgba = World_body.JOINT_COLOR)
 
         # Origin site parameters
-        base_site_child = draw_xml_line(root, 'site', name = self.pos_name_str, pos = self.pos_str, type = 'sphere',
+        base_site_child = draw_xml_line('site', name = self.pos_name_str, pos = self.pos_str, type = 'sphere',
                                         size = self.sphere_size_str, rgba = World_body.BASE_COLOR)
 
         # Append children
@@ -90,7 +90,6 @@ class Servo_body():
 
         return res_string, root
 
-
     def append_servo_body(self, new_servo_body):
         """
         Attach a new servo to an existing servo as a xml child
@@ -102,7 +101,6 @@ class Servo_body():
         res_string = etree.tostring(self.root, pretty_print = True)
         return res_string, self.root
 
-
     def set_geom_color(self, color):
         """
         :param color: an array of size 4 with rgba elements
@@ -113,7 +111,6 @@ class Servo_body():
                                                                    color[2],
                                                                    color[3])
         self.geom_child.set('rgba', self.geom_color_str)
-
 
     def set_position(self, position):
         self.position = position

@@ -5,7 +5,7 @@ from simulator.view.servo_body import Servo_body
 from simulator.view.xml_builder import *
 
 # Initializing servos
-servo1 = Servo(coordinates = (0, 0, 0))
+servo1 = Servo(coordinates = (0, 0, 0.5))
 servo2 = Servo(coordinates = (0, 0, 0))
 # servo3 = Servo(coordinates = (0, 0, 0))
 
@@ -19,9 +19,9 @@ servo1_body = Servo_body(servo1)
 servo2_body = Servo_body(servo2)
 servo1_body.append_servo_body(servo2_body)
 worldbody.append_servo_body(servo1_body)
+build_xml_file(worldbody.root)
 
-TEST_XML = str(worldbody.get_root_str())[2:-1]
-print(TEST_XML)
+TEST_XML = worldbody.get_root_str()
 
 
 # Building the model
